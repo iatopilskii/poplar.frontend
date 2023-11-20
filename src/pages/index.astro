@@ -1,5 +1,8 @@
 ---
-
+import { Image } from "astro:assets";
+import Icon from "../components/icon.astro";
+import avatarImage from "../images/avatar.png";
+import logoSummer from "../images/LogoSummer.png";
 ---
 
 <html lang="en">
@@ -12,9 +15,315 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1 class="font-display font-bold text-5xl">
-			Hello everyone, I am Ilya Topilskii
-		</h1>
+	<body class="font-display text-textDark">
+		<header class="header">
+			<div class="container flex h-full items-center justify-between">
+				<Image src={avatarImage} alt="avatar" class="avatar" />
+				<Image src={logoSummer} alt="avatar" class="logo" />
+			</div>
+		</header>
+		<section class="container pb-14">
+			<h1 class="font-bold text-5xl mb-10">
+				Hello everyone, I am Ilya Topilskii
+			</h1>
+			<p class="text-2xl bg-bgLight p-5 mb-10 rounded">
+				I am a passionate front-end developer with more than 5 years of
+				experience. Love to run, play chess and develop web apps. I am inspired
+				by creating user-friendly and efficient web interfaces, and I always
+				strive to write high quality code.
+			</p>
+			<h2 class="font-black text-3xl p-2.5 border-b-bdLight border-b">
+				Resume
+			</h2>
+			<div class="mt-3">
+				<div class="flex justify-between py-1 items-center">
+					<h3 class="text-base font-black">
+						<span class="mr-1.5">📄</span>
+						<span class="border-b border-b-bdLight">Full Name</span>
+					</h3>
+					<div class="tags">
+						<span class="px-1.5 text-sm bg-tagPurple rounded">
+							Ilya Topilskii
+						</span>
+					</div>
+				</div>
+				<div class="flex justify-between py-1 items-center">
+					<h3 class="text-base font-black">
+						<span class="mr-1.5">🌌</span>
+						<span class="border-b border-b-bdLight">Age</span>
+					</h3>
+					<div class="tags">
+						<span class="px-1.5 text-sm bg-tagGrey rounded">27</span>
+					</div>
+				</div>
+				<div class="flex justify-between py-1 items-center">
+					<h3 class="text-base font-black">
+						<span class="mr-1.5">💼</span>
+						<span class="border-b border-b-bdLight">Experience</span>
+					</h3>
+					<div class="tags">
+						<span class="px-1.5 text-sm bg-tagRed rounded">5+ years</span>
+					</div>
+				</div>
+				<div class="flex justify-between py-1 items-center">
+					<h3 class="text-base font-black">
+						<span class="mr-1.5">🏬</span>
+						<span class="border-b border-b-bdLight">Work place</span>
+					</h3>
+					<div class="tags">
+						<span class="px-1.5 text-sm bg-tagGreen rounded">
+							Delovaya sreda
+						</span>
+					</div>
+				</div>
+				<div class="flex justify-between py-1 items-center">
+					<h3 class="text-base font-black">
+						<span class="mr-1.5">🔍</span>
+						<span class="border-b border-b-bdLight">Title</span>
+					</h3>
+					<div class="tags">
+						<span class="px-1.5 text-sm bg-tagYellow rounded">
+							Frontend developer
+						</span>
+					</div>
+				</div>
+				<div class="flex justify-between py-1 items-center">
+					<h3 class="text-base font-black">
+						<span class="mr-1.5">📘</span>
+						<span class="border-b border-b-bdLight">Currently learning</span>
+					</h3>
+					<div class="tags">
+						<span class="mr-3 px-1.5 text-sm bg-tagRed rounded">
+							Algorithms
+						</span>
+						<span class="mr-3 px-1.5 text-sm bg-tagYellow rounded">
+							Node.js
+						</span>
+						<span class="px-1.5 text-sm bg-tagPurple rounded">NestJS</span>
+					</div>
+				</div>
+			</div>
+			<h2 class="font-black text-3xl mt-10 p-2.5 pl-0">👨‍💻 Work experience</h2>
+			<div class="mt-3">
+				<h3 class="text-xl font-black">Frontend (React) developer</h3>
+				<div class="flex justify-between mt-1">
+					<span class="text-base italic text-textRed">Delovaya Sreda</span>
+					<span class="text-base">remote, 08/2020 - present</span>
+				</div>
+				<ul class="mt-3 pl-6 list-disc list-inside">
+					<li>
+						Led a team of 5 front-end developers when the main team leader was
+						on vacation
+					</li>
+					<li>
+						Mentored 2 new developers on the team, expanding project structure
+						and working environment
+					</li>
+					<li>
+						Work with the PM to stay on track with the project plan and timeline
+					</li>
+					<li>
+						Lead a blog about programming algorithms for non-IT colleagues
+					</li>
+					<li>
+						Collaborated with UX-designers to create a design system, resulting
+						in a 40% improvement in the speed of developing new features
+					</li>
+					<li>Optimized the loading speed of web pages by 20%</li>
+					<li>Review colleagues` tasks</li>
+				</ul>
+			</div>
+			<div class="mt-8">
+				<h3 class="text-xl font-black">Frontend developer</h3>
+				<div class="flex justify-between mt-1">
+					<span class="text-base italic text-textRed">Everest</span>
+					<span class="text-base">Tambov, Russia, 04/2018 - 07/2019</span>
+				</div>
+				<ul class="mt-3 pl-6 list-disc list-inside">
+					<li>Won an award in the web interface design competition</li>
+					<li>
+						Developed front-end architecture that improved scalability and
+						performance of the website
+					</li>
+					<li>
+						Developed a full stack web application from scratch, including
+						back-end services, front-end interface, and database
+					</li>
+				</ul>
+			</div>
+			<div class="mt-8">
+				<h3 class="text-xl font-black">Web developer</h3>
+				<div class="flex justify-between mt-1">
+					<span class="text-base italic text-textRed">
+						Skobeev and parthners
+					</span>
+					<span class="text-base">Tambov, Russia, 02/2017 - 04/2018</span>
+				</div>
+				<ul class="mt-3 pl-6 list-disc list-inside">
+					<li>
+						Implemented a responsive design that ensured the web application was
+						accessible on all devices
+					</li>
+					<li>
+						Optimized web page loading time by 10%, improving user experience
+						and engagement
+					</li>
+					<li>
+						Developed a responsive website for a major e-commerce company that
+						increased sales by 20%
+					</li>
+				</ul>
+			</div>
+			<h2 class="font-black text-3xl mt-10 p-2.5 pl-0">🎓 Education</h2>
+			<div class="mt-3">
+				<h3 class="text-xl font-black">Master of Computer Science</h3>
+				<div class="flex justify-between mt-1">
+					<span class="text-base italic text-textRed">
+						Tambov State Technical University
+					</span>
+					<span class="text-base">Tambov, Russia, 09/2014 - 07/2019</span>
+				</div>
+				<ul class="mt-4">
+					<li>Major in Information Security</li>
+				</ul>
+			</div>
+			<h2 class="font-black text-3xl mt-10 p-2.5 pl-0">💻 What I use</h2>
+			<div class="mt-3 flex flex-wrap gap-x-16 gap-y-4">
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="javascript" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="typescript" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="react" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="nextjs" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="graphql" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="sass" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="storybook" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="nodejs" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="express" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="jest" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="babel" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="webpack" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="eslint" />
+				</div>
+				<div class="w-16 h-16 flex justify-center items-center">
+					<Icon icon="git" />
+				</div>
+			</div>
+			<h2 class="font-black text-3xl mt-10 p-2.5 pl-0">
+				📞 My social links and contacts
+			</h2>
+			<div class="mt-3 flex">
+				<a
+					href="https://github.com/iatopilskii"
+					rel="nofollow"
+					target="_blank"
+					class="flex flex-1 items-center h-16"
+				>
+					<span class="block w-16 h-16 mr-3">
+						<Icon icon="github" />
+					</span>
+					<span class="text-xl font-medium hover:underline">
+						https://github.com/iatopilskii
+					</span>
+				</a>
+				<a
+					href="https://t.me/iatopilskii"
+					rel="nofollow"
+					target="_blank"
+					class="flex flex-1 items-center h-16"
+				>
+					<span class="block w-16 h-16 mr-3">
+						<Icon icon="telegram" />
+					</span>
+					<span class="text-xl font-medium hover:underline">
+						https://t.me/iatopilskii
+					</span>
+				</a>
+			</div>
+			<div class="mt-4 flex">
+				<a
+					href="mailto:iatopilskii@gmail.com"
+					rel="nofollow"
+					target="_blank"
+					class="flex flex-1 items-center h-16"
+				>
+					<span class="block w-16 h-16 mr-3">
+						<Icon icon="gmail" />
+					</span>
+					<span class="text-xl font-medium hover:underline">
+						iatopilskii@gmail.com
+					</span>
+				</a>
+				<a
+					href="www.linkedin.com/in/iatopilskii"
+					rel="nofollow"
+					target="_blank"
+					class="flex flex-1 items-center h-16"
+				>
+					<span class="block w-16 h-16 mr-3">
+						<Icon icon="linkedin" />
+					</span>
+					<span class="text-xl font-medium hover:underline">
+						https://www.linkedin.com/in/iatopilskii
+					</span>
+				</a>
+			</div>
+		</section>
 	</body>
 </html>
+
+<style>
+	.header {
+		position: relative;
+		height: 360px;
+	}
+
+	.header img.avatar {
+		width: 244px;
+		height: 244px;
+	}
+
+	.header img.logo {
+		width: 250px;
+		height: 100px;
+	}
+
+	.header:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		background: linear-gradient(
+			269deg,
+			#f3ff77 0%,
+			#c8ffaa 66.67%,
+			#a1ffd9 99.67%
+		);
+		content: "";
+		z-index: -1;
+	}
+</style>
